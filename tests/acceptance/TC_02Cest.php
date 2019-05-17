@@ -8,6 +8,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Id Sort Icon
      */
     public function clickOnIDSort(Sort $I)
     {
@@ -17,6 +18,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Type Sort Icon
      */
     public function clickOnTypeSort(Sort $I)
     {
@@ -26,6 +28,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Table ID Sort Icon
      */
     public function clickOnTableIdSort(Sort $I)
     {
@@ -35,6 +38,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Number Sort Icon
      */
     public function clickOnNumSort(Sort $I)
     {
@@ -44,6 +48,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Date Sort Icon
      */
     public function clickOnDateSort(Sort $I)
     {
@@ -53,6 +58,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Description Sort Icon
      */
     public function clickOnDescripSort(Sort $I)
     {
@@ -62,6 +68,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Duration Sort Icon
      */
     public function clickOnDurationSort(Sort $I)
     {
@@ -70,6 +77,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Start Time Sort Icon
      */
     public function clickOnStTimeSort(Sort $I)
     {
@@ -79,6 +87,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Delete Sort Icon
      */
     public function clickOnDeleteSort(Sort $I)
     {
@@ -87,6 +96,7 @@ class TC_02Cest
     /**
      * @param Sort $I
      * @throws Exception
+     * check click on Edit Sort icon
      */
     public function clickOnEditSort(Sort $I)
     {

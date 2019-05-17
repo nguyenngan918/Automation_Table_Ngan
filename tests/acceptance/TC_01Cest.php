@@ -7,7 +7,6 @@ use Step\Acceptance\ClickAddEditStep as ClickAddEdit;
 use Faker\Factory;
 class TC_01Cest
 {
-
     /**
      * @var
      */

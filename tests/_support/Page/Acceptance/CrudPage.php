@@ -14,22 +14,22 @@ class CrudPage
     /**
      * @var string of reload before data
      */
-    public static $reloadData     =   '//a[text()="Reload Data"]';
+    public static $reloadData   =   '//a[text()="Reload Data"]';
 
     /**
      * @var string xpath of element want to delete which is the first reservation of Table
      */
-    public static $deleteData     =   '(//a[text()="Delete"])[2]';
+    public static $deleteData   =   '(//a[text()="Delete"])[2]';
 
     /**
      * @var string xpath of element want to edit which is second reservation of Table
      */
-    public static $deleteData4     =   '(//a[text()="Delete"])[3]';
+    public static $deleteData4  =   '(//a[text()="Delete"])[3]';
 
     /**
      * @var string xpath of element want to edit which is the first reservation of Table
      */
-    public static $editData       =   '(//a[text()="Edit"])[2]';
+    public static $editData     =   '(//a[text()="Edit"])[2]';
 
 
 

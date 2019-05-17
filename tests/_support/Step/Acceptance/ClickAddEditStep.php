@@ -10,7 +10,6 @@ namespace Step\Acceptance;
 use Page\Acceptance\FormPage as Form;
 class ClickAddEditStep extends \AcceptanceTester
 {
-
     /**
      * click on Ađ/edit button
      */

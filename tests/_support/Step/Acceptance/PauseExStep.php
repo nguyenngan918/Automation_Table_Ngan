@@ -3,7 +3,6 @@ namespace Step\Acceptance;
 
 class PauseExStep extends \AcceptanceTester
 {
-
     /**
      * pause display
      */

@@ -4,14 +4,9 @@ use Page\Acceptance\FormPage as Form;
 class NewStep extends \AcceptanceTester
 {
     /**
-     * @param $Id
-     * @param $num
-     * @param $date
-     * @param $descip
-     * @param $stTime
+     * @param array $reservation
      * @throws \Exception
-     *  Add information in Booking form
-     *
+     * Add information in Booking form
      */
     public function AddNewReservation($reservation = array())
     {
