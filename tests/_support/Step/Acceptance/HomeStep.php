@@ -19,21 +19,7 @@ class HomeStep extends \AcceptanceTester
         $I->waitForElementVisible(Form::$textForm,20);
 
     }
-
-    /**
-     * @throws \Exception
-     * check go to Edit Page
-     */
-    public function goToEdit()
-    {
-        $I = $this;
-        $I->amOnPage(Crud::$URL);
-        $I->waitForElementVisible(Crud::$editData,20);
-        $I->click(Crud::$editData);
-        $I->waitForElementVisible(Form::$textForm,20);
-
-    }
-
+    
     /**
      * @throws \Exception
      * check delete data of the first reservation of Table
