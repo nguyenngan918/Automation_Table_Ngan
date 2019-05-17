@@ -1,33 +1,32 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Thanh Ngan
+ * Date: 5/17/2019
+ * Time: 5:23 PM
+ */
+
 namespace Step\Acceptance;
 use Page\Acceptance\FormPage as Form;
-class NewStep extends \AcceptanceTester
+use Page\Acceptance\CrudPage as Crud;
+class EditStep extends \AcceptanceTester
 {
     /**
-     * @param $Id
-     * @param $num
-     * @param $date
-     * @param $descip
-     * @param $stTime
      * @throws \Exception
-     *  Add information in Booking form
-     *
+     * check edit data of the first reservation
      */
-    public function AddNewReservation($reservation = array())
+    public function editData($reservation = array())
     {
         $I = $this;
-        $I->amOnPage(Form::$URL);
+        $I->amOnPage(Crud::$URL);
+        $I->waitForElementVisible(Crud::$editData,20);
+        $I->click(Crud::$editData);
         $I->waitForElementVisible(Form::$tableIdInput,10);
         $I->fillField(Form::$tableIdInput,$reservation['id']);
         $I->fillField(Form::$numOfPerInput,$reservation['number']);
         $I->fillField(Form::$dateInput,$reservation['date']);
-        if (isset($reservation['']))
-        {
-            $I->fillField(Form::$decripInput, $reservation['description']);
-        }
+        $I->fillField(Form::$decripInput,$reservation['description']);
         $I->fillField(Form::$startTimeInput,$reservation['stTime']);
-
     }
-
 
 }

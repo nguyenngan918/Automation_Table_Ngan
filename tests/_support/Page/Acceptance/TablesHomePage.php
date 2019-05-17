@@ -6,67 +6,55 @@ class TablesHomePage
     // include url of current page
     public static   $URL            =   '';
 
-    public static   $table1         =   '//span[@class="current"]';
-    public static   $table2        =   '//a[@title="Go to page 2"]';
     /**
-     * @var string xpath before click on text header of table
+     * @var string : button change Table 1
      */
-    public static   $idAvailable    =   '//th[@class="id t-first"]';
-    public static   $typeAvailable  =   '//th[@class="type t-last"]';
-    public static   $tableID        =   '//th[@class="tableID t-first"]';
-    public static   $numberOfPerson =   '//th[@class="numberofperson"]';
-    public static   $date           =   '//th[@class="date"]';
-    public static   $description    =   '//th[@class="description"]';
-    public static   $duration       =   '//th[@class="duration"]';
-    public static   $startTime      =   '//th[@class="startTime"]';
-    public static   $delete         =   '//th[@class="delete"]';
-    public static   $edit           =   '//th[@class="edit t-last"]';
-    public static   $btnTable1      =   '//span[@class="current"]';
-    public static   $btnTable2      =   '//a[@title="Go to page 2"]';
+    public static   $table1         =   '//span[@class="current"]';
+    /**
+     * @var string: button change Table 2
+     */
+    public static   $table2        =   '//a[@title="Go to page 2"]';
 
     /**
-     * @var string xpath before click on short icon of table
+     * @var string of id sort icon
      */
     public static   $idSortIcon         =   '//img[@id="id:sort"]';
+    /**
+     * @var string of type sort icon
+     */
     public static   $typeSortIcon       =   '//img[@id="type:sort"]';
+    /**
+     * @var string of table id sort icon
+     */
     public static   $tableIdSortIcon    =   '//img[@id="tableID:sort"]';
+    /**
+     * @var string of number of person sort icon
+     */
     public static   $numOPSortIcon      =   '//img[@id="numberofperson:sort"]';
+    /**
+     * @var string of date sort icon
+     */
     public static   $dateSortIcon       =   '//img[@id="date:sort"]';
+    /**
+     * @var string of description sort icon
+     */
     public static   $descripSortIcon    =   '//img[@id="description:sort"]';
+    /**
+     * @var string of duration sort icon
+     */
     public static   $durationSortIcon   =   '//img[@id="duration:sort"]';
+    /**
+     * @var string of start time sort icon
+     */
     public static   $startTimeSortIcon  =   '//img[@id="startTime:sort"]';
+    /**
+     * @var string of delete sort icon
+     */
     public static   $deleteSortIcon     =   '//img[@id="delete:sort"]';
+    /**
+     * @var string of edit sort icon
+     */
     public static   $editSortIcon       =   '//img[@id="edit:sort"]';
 
-
-    /**
-     * @var string xpath after click on text header of table
-     */
-    public static   $idAvaiSort     =   '//a[@class="t-sort-column-ascending"][text()="Id"]';
-    public static   $typeAvaiSort   =   '//a[@class="t-sort-column-ascending"][text()="Type"]';
-    public static   $tableIDSort    =   '//a[@class="t-sort-column-ascending"][text()="Table ID"]';
-    public static   $numSort        =   '//a[@class="t-sort-column-ascending"][text()="Numberofperson"]';
-    public static   $dateSort       =   '//a[@class="t-sort-column-ascending"][text()="Date"]';
-    public static   $descripSort    =   '//a[@class="t-sort-column-ascending"][text()="Description"]';
-    public static   $durationSort   =   '//a[@class="t-sort-column-ascending"][text()="Duration"]';
-    public static   $startTimeSort  =   '//a[@class="t-sort-column-ascending"][text()="Start Time"]';
-    public static   $deleteSort     =   '//a[@class="t-sort-column-ascending"][text()="Delete"]';
-    public static   $editSort       =   '//a[@class="t-sort-column-ascending"][text()="Edit"]';
-
-
-    public static function route($param)
-    {
-        return static::$URL.$param;
-    }
-
-    /**
-     * @var \AcceptanceTester;
-     */
-    protected $acceptanceTester;
-
-    public function __construct(\AcceptanceTester $I)
-    {
-        $this->acceptanceTester = $I;
-    }
 
 }

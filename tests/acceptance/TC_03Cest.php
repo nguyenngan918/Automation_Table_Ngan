@@ -1,19 +1,30 @@
 <?php 
 use Step\Acceptance\HomeStep as Home;
+use Step\Acceptance\PauseExStep as Stop;
 class TC_03Cest
 {
-    public function _before(AcceptanceTester $I)
-    {
-    }
-
     // tests
-    public function changeTable1( Home $I)
+    /**
+     * @param Home $I
+     * @throws Exception
+     * check click on [1] button change Table
+     */
+    public function changeTable1( Home $I, $scenario)
     {
         $I->clickTable1();
+        $I = new Stop($scenario);
+        $I->PauseEx();
     }
 
-    public function changeTable2( Home $I)
+    /**
+     * @param Home $I
+     * @throws Exception
+     * check click on [2] button change Table
+     */
+    public function changeTable2( Home $I, $scenario)
     {
         $I->clickTable2();
+        $I = new Stop($scenario);
+        $I->PauseEx();
     }
 }

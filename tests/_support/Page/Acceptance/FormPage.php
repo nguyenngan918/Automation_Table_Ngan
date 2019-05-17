@@ -5,60 +5,42 @@ class FormPage
 {
     // include url of current page
     public static $URL = '/QATest/reservationform';
-    /**
-     * @var string of inputs in the Form
-     */
-    public static $tableIdInput     =   '//input[@id="tableID"]';
-    public static $numOfPerInput    =   '//input[@id="numberofperson"]';
-    public static $dateInput        =   '//input[@id="date"]';
-    public static $decripInput      =   '//textarea[@id="description"]';
-    public static $startTimeInput   =   '//input[@id="startTime"]';
 
     /**
-     * @var string of Icon when enter incorrect value
+     * @var string of Id field in Booking Form
      */
-    public static $errorTableIdIcon   =   '(//img[@class="t-error-icon"])[1]';
-    public static $errorNumOfPerIcon  =   '(//img[@class="t-error-icon"])[2]';
-    public static $errorStartTimeIcon =   '(//img[@class="t-error-icon"])[3]';
-
+    public static $tableIdInput   =   '//input[@id="tableID"]';
     /**
-     * @var string of label when enter incorrect value
+     * @var string of number field in Booking Form
      */
-    public static $idErrorLabel       =   '//label[@id="tableID:label"]';
-    public static $numOfPerErrorLabel =   '//label[@id="numberofperson:label"]';
-    public static $stTimeErrorLabel   =   '//label[@id="startTime:label"]';
+    public static $numOfPerInput  =   '//input[@id="numberofperson"]';
+    /**
+     * @var string of date field in Booking Form
+     */
+    public static $dateInput      =   '//input[@id="date"]';
+    /**
+     * @var string of description field in Booking Form
+     */
+    public static $decripInput    =   '//textarea[@id="description"]';
+    /**
+     * @var string of start time field in Booking Form
+     */
+    public static $startTimeInput =   '//input[@id="startTime"]';
 
     /**
      * @var string of [add/edit] button
      */
-    public static $btnAddEdit   =   '//input[@class="t-beaneditor-submit"]';
+    public static $btnAddEdit     =   '//input[@class="t-beaneditor-submit"]';
 
     /**
      * @var string of clear tag
      */
-    public static $clear        =   "//a[text()=\"clear\"]";
+    public static $clear          =   "//a[text()=\"clear\"]";
 
     /**
      * @param $param
      * @return string I see when i am on Reservationform Page
      */
     public static $textForm     =   '//body//h1[text()=" Table Booking Form"]';
-
-
-
-    public static function route($param)
-    {
-        return static::$URL.$param;
-    }
-
-    /**
-     * @var \AcceptanceTester;
-     */
-    protected $acceptanceTester;
-
-    public function __construct(\AcceptanceTester $I)
-    {
-        $this->acceptanceTester = $I;
-    }
 
 }

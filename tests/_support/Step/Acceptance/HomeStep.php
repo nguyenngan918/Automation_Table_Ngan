@@ -14,9 +14,9 @@ class HomeStep extends \AcceptanceTester
     {
         $I = $this;
         $I->amOnPage(Crud::$URL);
-        $I->waitForElementVisible(Crud::$newReservation,'20');
+        $I->waitForElementVisible(Crud::$newReservation,20);
         $I->click(Crud::$newReservation);
-        $I->waitForElementVisible(Form::$textForm,'20');
+        $I->waitForElementVisible(Form::$textForm,20);
 
     }
 
@@ -28,9 +28,25 @@ class HomeStep extends \AcceptanceTester
     {
         $I = $this;
         $I->amOnPage(Crud::$URL);
-        $I->waitForElementVisible(Crud::$editData,'20');
+        $I->waitForElementVisible(Crud::$editData,20);
         $I->click(Crud::$editData);
-        $I->waitForElementVisible(Form::$textForm,'20');
+        $I->waitForElementVisible(Form::$textForm,20);
+
+    }
+
+    /**
+     * @throws \Exception
+     * check delete data of the first reservation of Table
+     */
+    public function deleteData()
+    {
+        $I = $this;
+        $I->amOnPage(Crud::$URL);
+        $I->waitForElementVisible(Crud::$deleteData,20);
+        $I->click(Crud::$deleteData);
+        $I->pause();
+        $I->waitForElementVisible(Crud::$deleteData4,20);
+        $I->click(Crud::$deleteData4);
 
     }
 
@@ -42,20 +58,8 @@ class HomeStep extends \AcceptanceTester
     {
         $I = $this;
         $I->amOnPage(Crud::$URL);
-        $I->waitForElementVisible(Crud::$reloadData,'20');
+        $I->waitForElementVisible(Crud::$reloadData,20);
         $I->click(Crud::$reloadData);
-    }
-
-    /**
-     * @throws \Exception
-     * check delete data chosen
-     */
-    public function deleteData()
-    {
-        $I = $this;
-        $I->amOnPage(Crud::$URL);
-        $I->waitForElementVisible(Crud::$deleteData,'20');
-        $I->click(Crud::$deleteData);
     }
 
     /**
@@ -66,7 +70,7 @@ class HomeStep extends \AcceptanceTester
     {
         $I = $this;
         $I->amOnPage(Form::$URL);
-        $I->waitForElementVisible(Form::$clear,'20');
+        $I->waitForElementVisible(Form::$clear,20);
         $I->click(Form::$clear);
     }
 
@@ -78,7 +82,7 @@ class HomeStep extends \AcceptanceTester
     {
         $I = $this;
         $I->amOnPage(Crud::$URL);
-        $I->waitForElementVisible(Table::$table1,'10');
+        $I->waitForElementVisible(Table::$table1,10);
         $I->click(Table::$table1);
     }
 
@@ -91,7 +95,7 @@ class HomeStep extends \AcceptanceTester
 
         $I = $this;
         $I->amOnPage(Crud::$URL);
-        $I->waitForElementVisible(Table::$table2,'10');
+        $I->waitForElementVisible(Table::$table2,10);
         $I->click(Table::$table2);
     }
 }

@@ -760,7 +760,7 @@ trait AcceptanceTesterActions
      * [!] Method is generated. Documentation taken from corresponding module.
      *
      * Saves current page's HTML into a temprary file.
-     * Use this method in debug mode within an interactive pause to get a source code of current page.
+     * Use this method in debug mode within an interactive pauseStep to get a source code of current page.
      *
      * ```php
      * <?php

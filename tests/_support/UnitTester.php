@@ -12,7 +12,7 @@
  * @method void am($role)
  * @method void lookForwardTo($achieveValue)
  * @method void comment($description)
- * @method void pause()
+ * @method void pauseStep()
  *
  * @SuppressWarnings(PHPMD)
 */

@@ -9,40 +9,28 @@ class CrudPage
     /**
      * @var string of create new Reservation
      */
-    public static   $newReservation =   '//a[text()="New Reservation"]';
+    public static $newReservation =   '//a[text()="New Reservation"]';
 
     /**
      * @var string of reload before data
      */
-    public static   $reloadData     =   '//a[text()="Reload Data"]';
+    public static $reloadData     =   '//a[text()="Reload Data"]';
 
     /**
-     * @var string of delete chose data
+     * @var string xpath of element want to delete which is the first reservation of Table
      */
-    public static   $deleteData     =   '(//a[text()="Delete"])[2]';
+    public static $deleteData     =   '(//a[text()="Delete"])[2]';
 
     /**
-     * @var string of edit data
+     * @var string xpath of element want to edit which is second reservation of Table
      */
-    public static   $editData       =   '(//a[text()="Edit"])[2]';
-
-
-
-
-
-    public static function route($param)
-    {
-        return static::$URL.$param;
-    }
+    public static $deleteData4     =   '(//a[text()="Delete"])[3]';
 
     /**
-     * @var \AcceptanceTester;
+     * @var string xpath of element want to edit which is the first reservation of Table
      */
-    protected $acceptanceTester;
+    public static $editData       =   '(//a[text()="Edit"])[2]';
 
-    public function __construct(\AcceptanceTester $I)
-    {
-        $this->acceptanceTester = $I;
-    }
+
 
 }
